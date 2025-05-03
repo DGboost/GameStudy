@@ -86,6 +86,14 @@ Flipbook* ResourceManager::CreateFlipbook(const wstring& key)
 	return fb;
 }
 
+Tilemap* ResourceManager::GetTilemap(const wstring& key)
+{
+	if (_tilemaps.find(key) != _tilemaps.end())
+		return _tilemaps[key];
+
+	return nullptr;
+}
+
 Tilemap* ResourceManager::CreateTilemap(const wstring& key)
 {
 	if (_tilemaps.find(key) != _tilemaps.end())
@@ -98,9 +106,23 @@ Tilemap* ResourceManager::CreateTilemap(const wstring& key)
 
 void ResourceManager::SaveTilemap(const wstring& key, const wstring& path)
 {
+	Tilemap* tm = GetTilemap(key);
+
+	tm->SaveFile(path);
 }
 
 Tilemap* ResourceManager::LoadTilemap(const wstring& key, const wstring& path)
 {
-	return nullptr;
+	Tilemap* tm = nullptr;
+
+	if (_tilemaps.find(key) == _tilemaps.end())
+		_tilemaps[key] = new Tilemap();
+
+	tm = _tilemaps[key];
+
+	//fs::path fullPath = path;
+	//tm->LoadFile(fullPath);
+	tm->LoadFile(path);
+
+	return tm;
 }

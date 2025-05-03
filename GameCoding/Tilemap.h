@@ -28,6 +28,5 @@ private:
 	Vec2Int _mapSize = {};
 	int32 _tileSize = 0;
 	vector<vector<Tile>> _tiles;
-
 };
 
