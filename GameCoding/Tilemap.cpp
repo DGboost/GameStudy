@@ -23,7 +23,7 @@ Tile* Tilemap::GetTile(Vec2Int pos)
 		pos.y < 0 || pos.y >= _mapSize.y)
 		return nullptr;
 
-	return &_tiles[pos.x][pos.y];
+	return &_tiles[pos.y][pos.x];
 }
 
 void Tilemap::SetMapSize(Vec2Int size)
