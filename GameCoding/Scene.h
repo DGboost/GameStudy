@@ -9,11 +9,10 @@ public:
 	Scene();
 	virtual ~Scene();
 
-	virtual void Init();
-	virtual void Update();
-	virtual void Render(HDC hdc);
+	virtual void Init() abstract;
+	virtual void Update() abstract;
+	virtual void Render(HDC hdc) abstract;
 
-public:
 	void AddActor(Actor* actor);
 	void RemoveActor(Actor* actor);
 

@@ -16,8 +16,9 @@
 #include <string>
 #include <algorithm>
 #include <functional>
-#include <assert.h>
 using namespace std;
+
+#include <assert.h>
 
 // C++20
 #include <format>
@@ -33,3 +34,9 @@ namespace fs = std::filesystem;
 #endif
 
 #pragma comment(lib, "msimg32.lib")
+
+// »ç¿îµå
+#include <MMSystem.h>
+#include <dsound.h>
+#pragma comment (lib, "winmm.lib")
+#pragma comment (lib, "dsound.lib")

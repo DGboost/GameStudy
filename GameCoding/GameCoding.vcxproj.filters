@@ -67,7 +67,10 @@
       <UniqueIdentifier>{b72f630e-863f-4c00-911d-7c9e02626a9a}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\04. Resources\Paper2D">
-      <UniqueIdentifier>{05def821-bcce-4d5e-9f2a-9f5ad404d25a}</UniqueIdentifier>
+      <UniqueIdentifier>{841f4e0b-94fd-4add-a3a4-829175d40d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Resources\Sound">
+      <UniqueIdentifier>{c079b581-5a66-4c37-8aac-111dbf48d353}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +173,12 @@
     <ClInclude Include="Panel.h">
       <Filter>소스 파일\06. UI</Filter>
     </ClInclude>
+    <ClInclude Include="TestPanel.h">
+      <Filter>소스 파일\06. UI\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="TilemapActor.h">
+      <Filter>소스 파일\03. Objects\Unreal</Filter>
+    </ClInclude>
     <ClInclude Include="Flipbook.h">
       <Filter>소스 파일\04. Resources\Paper2D</Filter>
     </ClInclude>
@@ -182,8 +191,11 @@
     <ClInclude Include="Tilemap.h">
       <Filter>소스 파일\04. Resources\Paper2D</Filter>
     </ClInclude>
-    <ClInclude Include="TilemapActor.h">
-      <Filter>소스 파일\03. Objects\Unreal</Filter>
+    <ClInclude Include="Sound.h">
+      <Filter>소스 파일\04. Resources\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>소스 파일\01. Manager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -278,6 +290,12 @@
     <ClCompile Include="Panel.cpp">
       <Filter>소스 파일\06. UI</Filter>
     </ClCompile>
+    <ClCompile Include="TestPanel.cpp">
+      <Filter>소스 파일\06. UI\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="TilemapActor.cpp">
+      <Filter>소스 파일\03. Objects\Unreal</Filter>
+    </ClCompile>
     <ClCompile Include="Flipbook.cpp">
       <Filter>소스 파일\04. Resources\Paper2D</Filter>
     </ClCompile>
@@ -290,8 +308,11 @@
     <ClCompile Include="Tilemap.cpp">
       <Filter>소스 파일\04. Resources\Paper2D</Filter>
     </ClCompile>
-    <ClCompile Include="TilemapActor.cpp">
-      <Filter>소스 파일\03. Objects\Unreal</Filter>
+    <ClCompile Include="Sound.cpp">
+      <Filter>소스 파일\04. Resources\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>소스 파일\01. Manager</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
